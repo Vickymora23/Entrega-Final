@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <nav class="navegacion">
+      <div>
+         <!-- menu mobile -->
+         <input type="checkbox" id="check_menu"/>
+        <ul class="menu">
+          <li class="menu_item">
+            <i class="bx bx-home-heart"></i>
+            <a href="./index.html">Inicio</a>
+          </li>
+          <li class="menu_item">
+            <i class="bx bx-book-reader"></i>
+            <a href="./historia.html">Historia</a>
+          </li>
+          <li class="menu_item">
+            <i class="bx bx-landscape"></i>
+            <a href="./atractivos.html">Atractivos</a>
+          </li>
+          <li class="menu_item">
+            <i class="bx bx-map-alt"></i>
+            <a href="./excursiones.html">Excursiones</a>
+          </li>
+          <li class="menu_item">
+            <i class="bx bx-user-pin"></i>
+            <a href="./contacto.html">Contacto </a>
+          </li>
+        </ul>
+        <label for="check_menu">
+          <i class="bx bx-menu"></i> 
+        </label>
+      </div>
+    </nav>
+    <header class="header-container">
+      
+      <!-- form bootstrap -->
+      <section class="d-flex justify-content-center align-items-center form-position">
+        <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4 p-4">
+          <div class="mb-4 d-flex justify-content-start align-items-center">
+            <h4><i class="bi bi-chat-left-quote"></i> &nbsp; Contacto</h4>
+          </div>
+          <div class="mb-1">
+            <form id="contacto">
+              <div class="mb-4 d-flex justify-content-between">
+                <div>
+                  <label for="nombre">
+                    <i class="bi bi-person-fill"></i> Nombre</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="nombre"
+                    id="nombre"
+                    placeholder="Introduzca su nombre"
+                    required
+                  />
+                  <div class="nombre text-danger"></div>
+                </div>
+                <div>
+                  <label for="apellido">
+                    <i class="bi bi-person-bounding-box"></i> Apellido</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="apellido"
+                    id="apellido"
+                    placeholder="Introduzca su apellido"
+                    required
+                  />
+                  <div class="apellido text-danger"></div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="correo"
+                  ><i class="bi bi-envelope-fill"></i> Correo</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  name="correo"
+                  id="correo"
+                  placeholder="Introduzca su email"
+                  required
+                />
+                <div class="correo text-danger"></div>
+              </div>
+              <div class="mb-4">
+                <label for="sexo"
+                  ><i class="bi bi-gender-ambiguous"></i> Sexo:
+                </label>
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="sexo"
+                  value="masculino"
+                />
+                Masculino
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  name="sexo"
+                  value="femenino"
+                />
+                Femenino
+                <div class="sexo text-danger"></div>
+              </div>
+              <div class="mb-4">
+                <label for="mensaje">
+                  <i class="bi bi-chat-right-dots-fill" required></i>
+                  Mensaje</label
+                >
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  class="form-control"
+                  placeholder="Introduzca un comentario"
+                ></textarea>
+                <div class="mensaje text-danger"></div>
+              </div>
+
+              <div class="mb-2">
+                <button
+                  id="botton"
+                  class="col-12 btn btn-primary d-flex justify-content-between"
+                >
+                  <span>Enviar </span
+                  ><i id="icono" class="bi bi-cursor-fill"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
