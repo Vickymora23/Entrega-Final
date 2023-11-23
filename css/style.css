@@ -29,7 +29,7 @@
 }
 
 nav {
-  width: 100%;
+  max-width: 100%;
   height: 60px;
   background-color: rgba(254, 129, 45, 0.8235294118);
   position: fixed;
@@ -39,13 +39,13 @@ nav {
 nav .navegacion div {
   font-family: "Quick-fox";
   font-size: 1.3rem;
-  width: 100%;
+  max-width: 100%;
   height: 50px;
   display: flex;
   flex-wrap: wrap;
 }
 nav .navegacion div .menu {
-  width: 50%;
+  max-width: 50%;
   color: beige;
   font-size: 1.5rem;
   display: flex;
@@ -486,12 +486,12 @@ footer #footer .texto-final h1 {
     display: none;
   }
   .tarjetas {
-    grid-template-columns: 1fr;
+    grid-template-columns: 419px;
   }
   .tarjeta_img {
-    width: 95vw;
+    max-width: 50%;
     height: 200px;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-top: 65px;
   }
   .tarjeta_container p {
@@ -504,16 +504,6 @@ footer #footer .texto-final h1 {
     width: auto;
     height: auto;
     margin-top: 10px;
-  }
-}
-@media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-}
-@media (max-width: 768px) {
-  html {
-    font-size: 45%;
   }
 }
 

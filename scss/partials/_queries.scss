@@ -22,12 +22,12 @@
     display: none;
   }
   .tarjetas {
-    grid-template-columns: 1fr;
+    grid-template-columns: 419px;
   }
   .tarjeta_img {
-    width: 95vw;
+    max-width: 50%;
     height: 200px;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-top: 65px;
   }
   .tarjeta_container p {
@@ -43,13 +43,13 @@
   }
 }
 
-@media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-}
-@media (max-width: 768px) {
-  html {
-    font-size: 45%;
-  }
-}
+// @media (max-width: 991px) {
+//   html {
+//     font-size: 55%;
+//   }
+// }
+// @media (max-width: 768px) {
+//   html {
+//     font-size: 45%;
+//   }
+// }
