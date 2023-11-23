@@ -161,10 +161,10 @@ nav {
   .tarjetas {
     display: grid;
     grid-template-columns: repeat(2, 838px);
-    grid-template-rows: repeat(7, 700px);
-    max-width: 100%;
+    grid-template-rows: repeat(6, 700px);
+    max-width: 90%;
     height: 100vh;
-    gap: 8px 8px;
+    gap: 4px 4px;
 
     .tarjeta_1 {
       max-width: 98%;
@@ -215,40 +215,27 @@ nav {
 }
 
 /* pagina HISTORIA */
-.pagina_historia {
-  div {
-    div {
-      div {
-        .img_carousel {
-          width: 90%;
-          height: 750px;
-          left: 85px;
-          border-radius: 12px 12px 12px 12px;
-          border: #10706d46 solid;
+.texto-carrousel {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: rgb(123, 30, 210);
+  background-color: rgba(0, 0, 0, 0.694);
+  border-radius: 5px 5px 5px 5px;
+}
 
-          .texto-carrousel {
-            font-size: 2rem;
-            font-weight: bolder;
-            color: rgb(123, 30, 210);
-            background-color: rgba(0, 0, 0, 0.694);
-            border-radius: 5px 5px 5px 5px;
-          }
-        }
-      }
-    }
+.slide {
+  margin-top: 60px;
+
+  img {
+    max-width: 99%;
+    height: 40vw;
   }
 }
-
-.contenido-historia {
-  font-family: "RenogareSoft";
-  background-color: rgba(204, 25, 192, 0.318);
-}
-
 .titulo-historia {
-  background-color: rgba(128, 128, 128, 0.419);
+  background-color: rgb(109, 80, 255);
   border: 1px solid;
   left: 10px;
-  width: 100%;
+  max-width: 99%;
   height: 55px;
   text-align: center;
   align-items: center;
@@ -259,6 +246,10 @@ nav {
   font-family: "Montserrat";
   font-weight: 600;
 }
+.contenido-historia {
+  font-family: "RenogareSoft";
+  max-width: 98%;
+}
 
 .card-historia {
   height: 550px;
@@ -266,7 +257,7 @@ nav {
 }
 
 .img-tarjetas2 {
-  width: 48vw;
+  max-width:99%;
   height: 350px;
   margin-left: 6px;
   align-items: center;
@@ -275,32 +266,27 @@ nav {
 /* pagina EXCURSIONES */
 .cabecera {
   .img-portada-exc {
-    width: 100vw;
-    height: 400px;
+   width: 98vw;
+   height: 400px;
+    margin-left: 8px;
 
-    .img-portada-exc:hover {
+    &:hover {
       opacity: 0.8;
     }
   }
 }
-.contenedor1 {
-  margin-top: 30px;
+.contenedor1-exc {
+  margin-top: 60px;
   margin-bottom: 30px;
-  div {
-    div {
-      .img-excursiones {
-        height: 600px;
-      }
-    }
-  }
+  
+ 
 }
-.contenedor2 {
-  margin-top: 30px;
+.contenedor2-exc {
+  margin-top: 100px;
 }
-
-.img-excursiones,
+ .img-excursiones,
 .container:hover {
-  filter: saturate(180%);
+  filter: saturate(150%);
 }
 
 /* pagina ATRACTIVOS */
@@ -313,12 +299,12 @@ nav {
   align-content: space-around;
   justify-content: space-between;
   .card-group1 {
-    margin-top: 31px;
+    margin-top: 50px;
   }
   div {
     .img-1 {
       width: 450px;
-      height: 470px;
+      height: 450px;
     }
   }
   div {
@@ -328,7 +314,12 @@ nav {
   }
 }
 .card-group2 {
-  margin-top: 20px;
+  margin-top: 40px;
+}
+.card-grupo3{
+  margin-top: 40px;
+}
+
   div {
     div {
       div {
@@ -339,7 +330,7 @@ nav {
       }
     }
   }
-}
+
 
 div {
   div {
@@ -353,6 +344,13 @@ div {
 }
 
 /* pagina CONTACTOS */
+.titulo-contacto{
+  margin-top: 80px;
+  max-width: 100%;
+}
+
+
+
 .header-container {
   .form-position {
     margin-top: 160px;
@@ -372,28 +370,23 @@ div {
 /* FOOTER */
 footer {
   margin-top: 1300px;
-  background-color:  #fe812dd2 ;
+  background-color: #fe812dd2;
   max-width: 99%;
- }
+}
 
-  h5{
+h5 {
   font-family: "Montserrat" !important;
-  }
-  
+}
 
-
-i{
+i {
   font-size: 25px;
- }
-
-
+}
 
 //   #footer {
 //     margin-top: 190px;
 //     height: 75vh;
 //     max-width: 99%;
 //     background-color: #fe812dd2;
-    
 
 //     .footer-container {
 //       display: flex;

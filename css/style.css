@@ -169,10 +169,10 @@ nav .navegacion div .menu .menu_item a {
 .destinos_container .tarjetas {
   display: grid;
   grid-template-columns: repeat(2, 838px);
-  grid-template-rows: repeat(7, 700px);
-  max-width: 100%;
+  grid-template-rows: repeat(6, 700px);
+  max-width: 90%;
   height: 100vh;
-  gap: 8px 8px;
+  gap: 4px 4px;
 }
 .destinos_container .tarjetas .tarjeta_1 {
   max-width: 98%;
@@ -216,14 +216,7 @@ nav .navegacion div .menu .menu_item a {
 }
 
 /* pagina HISTORIA */
-.pagina_historia div div div .img_carousel {
-  width: 90%;
-  height: 750px;
-  left: 85px;
-  border-radius: 12px 12px 12px 12px;
-  border: rgba(16, 112, 109, 0.2745098039) solid;
-}
-.pagina_historia div div div .img_carousel .texto-carrousel {
+.texto-carrousel {
   font-size: 2rem;
   font-weight: bolder;
   color: rgb(123, 30, 210);
@@ -231,16 +224,19 @@ nav .navegacion div .menu .menu_item a {
   border-radius: 5px 5px 5px 5px;
 }
 
-.contenido-historia {
-  font-family: "RenogareSoft";
-  background-color: rgba(204, 25, 192, 0.318);
+.slide {
+  margin-top: 60px;
+}
+.slide img {
+  max-width: 99%;
+  height: 40vw;
 }
 
 .titulo-historia {
-  background-color: rgba(128, 128, 128, 0.419);
+  background-color: rgb(109, 80, 255);
   border: 1px solid;
   left: 10px;
-  width: 100%;
+  max-width: 99%;
   height: 55px;
   text-align: center;
   align-items: center;
@@ -252,13 +248,18 @@ nav .navegacion div .menu .menu_item a {
   font-weight: 600;
 }
 
+.contenido-historia {
+  font-family: "RenogareSoft";
+  max-width: 98%;
+}
+
 .card-historia {
   height: 550px;
   background: linear-gradient(-98deg, #8f019f, #f28a57);
 }
 
 .img-tarjetas2 {
-  width: 48vw;
+  max-width: 99%;
   height: 350px;
   margin-left: 6px;
   align-items: center;
@@ -266,28 +267,26 @@ nav .navegacion div .menu .menu_item a {
 
 /* pagina EXCURSIONES */
 .cabecera .img-portada-exc {
-  width: 100vw;
+  width: 98vw;
   height: 400px;
+  margin-left: 8px;
 }
-.cabecera .img-portada-exc .img-portada-exc:hover {
+.cabecera .img-portada-exc:hover {
   opacity: 0.8;
 }
 
-.contenedor1 {
-  margin-top: 30px;
+.contenedor1-exc {
+  margin-top: 60px;
   margin-bottom: 30px;
 }
-.contenedor1 div div .img-excursiones {
-  height: 600px;
-}
 
-.contenedor2 {
-  margin-top: 30px;
+.contenedor2-exc {
+  margin-top: 100px;
 }
 
 .img-excursiones,
 .container:hover {
-  filter: saturate(180%);
+  filter: saturate(150%);
 }
 
 /* pagina ATRACTIVOS */
@@ -301,20 +300,25 @@ nav .navegacion div .menu .menu_item a {
   justify-content: space-between;
 }
 .titulos1 .card-group1 {
-  margin-top: 31px;
+  margin-top: 50px;
 }
 .titulos1 div .img-1 {
   width: 450px;
-  height: 470px;
+  height: 450px;
 }
 .titulos1 div .img-2 {
   height: 400px;
 }
 
 .card-group2 {
-  margin-top: 20px;
+  margin-top: 40px;
 }
-.card-group2 div div div img-7 {
+
+.card-grupo3 {
+  margin-top: 40px;
+}
+
+div div div img-7 {
   width: 900px;
   height: 400px;
 }
@@ -325,6 +329,11 @@ div div div .img-8 {
 }
 
 /* pagina CONTACTOS */
+.titulo-contacto {
+  margin-top: 80px;
+  max-width: 100%;
+}
+
 .header-container .form-position {
   margin-top: 160px;
 }
@@ -350,6 +359,39 @@ i {
   font-size: 25px;
 }
 
+@media (max-width: 1200) {
+  .portada {
+    max-width: 99%;
+  }
+  .destinos_container {
+    max-width: 95%;
+    height: 50%;
+  }
+  .tarjetas {
+    max-width: 70%;
+    height: 50vh;
+    gap: 4px;
+    grid-template-columns: 838px;
+    grid-template-rows: repeat(7, 500px);
+  }
+  .tarjeta_img {
+    max-width: 60%;
+    height: 200px;
+    margin-left: 5px;
+    margin-top: 65px;
+  }
+  .tarjeta_container p {
+    max-width: 59%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .tarjeta_titulo {
+    max-width: 48%;
+    height: auto;
+    margin-top: 10px;
+  }
+}
 @media (max-width: 780px) {
   .navegacion label {
     display: block;
@@ -377,11 +419,11 @@ i {
     height: 50%;
   }
   .tarjetas {
-    max-width: 50%;
+    max-width: 90%;
     height: 50vh;
     gap: 8px;
     grid-template-columns: 419px;
-    grid-template-rows: repeat(7, 350px);
+    grid-template-rows: repeat(6, 350px);
   }
   .tarjeta_img {
     max-width: 49%;
@@ -400,51 +442,38 @@ i {
     height: auto;
     margin-top: 10px;
   }
-  footer {
-    max-width: 100%;
-    height: 100%;
-    background-color: rgba(240, 114, 31, 0.8235294118);
-    display: flex;
-    flex-direction: column;
+}
+@media (max-width: 1200) {
+  .portada {
+    max-width: 99%;
   }
-  #footer {
-    height: 100%;
-    max-width: 49%;
-    background-color: rgba(254, 129, 45, 0.8235294118);
+  .destinos_container {
+    max-width: 95%;
+    height: 50%;
   }
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+  .tarjetas {
+    max-width: 70%;
+    height: 50vh;
+    gap: 4px;
+    grid-template-columns: 838px;
+    grid-template-rows: repeat(7, 500px);
   }
-  .logo-container, .iconos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: start;
-    align-content: start;
+  .tarjeta_img {
+    max-width: 60%;
+    height: 200px;
+    margin-left: 5px;
+    margin-top: 65px;
   }
-  .logo-container, .iconos, i {
-    font-size: 1rem;
+  .tarjeta_container p {
+    max-width: 59%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .tarjeta_titulo {
+    max-width: 48%;
+    height: auto;
     margin-top: 10px;
-  }
-  .informacion {
-    margin-top: -150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-  .informacion, i {
-    font-size: 1rem;
-  }
-  .noticias {
-    margin-top: -150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-  .noticias, h1, p {
-    font-size: 1re;
   }
 }
 
