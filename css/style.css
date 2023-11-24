@@ -164,13 +164,21 @@ nav .navegacion div .menu .menu_item a {
 .destinos_container {
   background-color: none;
   max-width: 90%;
-  height: 100%;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 1305px;
+  padding-right: 20px;
 }
 .destinos_container .tarjetas {
   display: grid;
   grid-template-columns: repeat(2, 838px);
+<<<<<<< HEAD
   grid-template-rows: repeat(6, 700px);
   max-width: 90%;
+=======
+  grid-template-rows: repeat(7, 700px);
+  max-width: 99%;
+>>>>>>> dev
   height: 100vh;
   gap: 4px 4px;
 }
@@ -346,7 +354,7 @@ div div div .img-8 {
 
 /* FOOTER */
 footer {
-  margin-top: 1300px;
+  margin-top: 10px;
   background-color: rgba(254, 129, 45, 0.8235294118);
   max-width: 99%;
 }
@@ -359,6 +367,7 @@ i {
   font-size: 25px;
 }
 
+<<<<<<< HEAD
 @media (max-width: 1200) {
   .portada {
     max-width: 99%;
@@ -412,10 +421,14 @@ i {
     align-items: start;
     align-content: start;
   }
+=======
+@media (max-width: 576px) {
+>>>>>>> dev
   .portada {
     display: none;
   }
   .destinos_container {
+<<<<<<< HEAD
     height: 50%;
   }
   .tarjetas {
@@ -424,24 +437,57 @@ i {
     gap: 8px;
     grid-template-columns: 419px;
     grid-template-rows: repeat(6, 350px);
+=======
+    grid-template-columns: 1, 0.5fr;
+    grid-template-rows: repeat(7, 350px);
+>>>>>>> dev
   }
-  .tarjeta_img {
-    max-width: 49%;
+  .destinos_container .tarjetas {
+    grid-template-columns: 1, 0.5fr;
+  }
+  .destinos_container .tarjetas .tarjeta_img {
+    max-width: 99vw;
     height: 200px;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 65px;
   }
-  .tarjeta_container p {
-    max-width: 48%;
+  .destinos_container .tarjetas .tarjeta_img .tarjeta_container p {
+    max-width: 100%;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .destinos_container .tarjetas .tarjeta_img .tarjeta_container .tarjeta_titulo {
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  .portada {
+    max-width: 100%;
+  }
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+  .tarjetas .tarjeta_img {
+    width: 95vw;
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 65px;
+  }
+  .tarjetas .tarjeta_img p {
+    width: 100vw;
     height: auto;
     margin-left: 10px;
     margin-right: 5px;
   }
-  .tarjeta_titulo {
-    max-width: 48%;
+  .tarjetas .tarjeta_img .tarjeta_titulo {
+    width: auto;
     height: auto;
     margin-top: 10px;
   }
+<<<<<<< HEAD
 }
 @media (max-width: 1200) {
   .portada {
@@ -475,6 +521,8 @@ i {
     height: auto;
     margin-top: 10px;
   }
+=======
+>>>>>>> dev
 }
 
 /*# sourceMappingURL=style.css.map */
