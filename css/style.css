@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Backhome";
   src: url(../font/Backhome.otf);
@@ -132,13 +133,8 @@ a {
 .destinos_container .tarjetas {
   display: grid;
   grid-template-columns: repeat(2, 838px);
-<<<<<<< HEAD
-  grid-template-rows: repeat(6, 700px);
-  max-width: 90%;
-=======
   grid-template-rows: repeat(7, 700px);
   max-width: 99%;
->>>>>>> dev
   height: 100vh;
   gap: 4px 4px;
 }
@@ -327,162 +323,101 @@ i {
   font-size: 25px;
 }
 
-<<<<<<< HEAD
-@media (max-width: 1200) {
-  .portada {
-    max-width: 99%;
-  }
-  .destinos_container {
-    max-width: 95%;
-    height: 50%;
-  }
-  .tarjetas {
-    max-width: 70%;
-    height: 50vh;
-    gap: 4px;
-    grid-template-columns: 838px;
-    grid-template-rows: repeat(7, 500px);
+/* Media query para diseño responsive en 576px */
+@media screen and (max-width: 576px) {
+  .portada img {
+    display: none;
   }
   .tarjeta_img {
-    max-width: 60%;
-    height: 200px;
-    margin-left: 5px;
-    margin-top: 65px;
-  }
-  .tarjeta_container p {
-    max-width: 59%;
-    height: auto;
-    margin-left: 10px;
-    margin-right: 5px;
+    height: 250px; /* Modificar la altura para pantallas más pequeñas */
   }
   .tarjeta_titulo {
-    max-width: 48%;
-    height: auto;
-    margin-top: 10px;
+    font-size: 1rem; /* Ajustar el tamaño del título */
   }
-}
-@media (max-width: 780px) {
-  .navegacion label {
-    display: block;
+  .tarjeta_container {
+    padding: 10px; /* Añadir espaciado interno para mejor visualización en pantallas pequeñas */
   }
-  .menu {
-    display: none;
-  }
-  .navegacion #check_menu:checked ~ .menu {
-    background-color: rgba(16, 112, 109, 0.6941176471);
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    margin-left: 0;
-    top: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    align-content: start;
-  }
-=======
-@media (max-width: 576px) {
->>>>>>> dev
-  .portada {
-    display: none;
-  }
-  .destinos_container {
-<<<<<<< HEAD
-    height: 50%;
-  }
-  .tarjetas {
-    max-width: 90%;
-    height: 50vh;
-    gap: 8px;
-    grid-template-columns: 419px;
-    grid-template-rows: repeat(6, 350px);
-=======
-    grid-template-columns: 1, 0.5fr;
-    grid-template-rows: repeat(7, 350px);
->>>>>>> dev
+  .boton_vermas {
+    margin-left: 10px; /* Modificar el espaciado del botón */
   }
   .destinos_container .tarjetas {
-    grid-template-columns: 1, 0.5fr;
+    grid-template-columns: 1fr; /* Cambiar a una columna para pantallas pequeñas */
+    grid-template-rows: auto; /* Ajustar el tamaño de las filas automáticamente */
   }
-  .destinos_container .tarjetas .tarjeta_img {
-    max-width: 99vw;
-    height: 200px;
-    margin-left: 10px;
-    margin-top: 65px;
-  }
-  .destinos_container .tarjetas .tarjeta_img .tarjeta_container p {
+  /* Estilos específicos para cada tarjeta en pantallas más pequeñas, si es necesario */
+  .destinos_container .tarjetas .tarjeta_1,
+  .destinos_container .tarjetas .tarjeta_2,
+  .destinos_container .tarjetas .tarjeta_3,
+  .destinos_container .tarjetas .tarjeta_4,
+  .destinos_container .tarjetas .tarjeta_5,
+  .destinos_container .tarjetas .tarjeta_6 {
     max-width: 100%;
-    height: auto;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .destinos_container .tarjetas .tarjeta_img .tarjeta_container .tarjeta_titulo {
-    width: auto;
-    height: auto;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
-@media (min-width: 577px) and (max-width: 992px) {
-  .portada {
+/* Media query para diseño responsive en 992px */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .portada img {
     max-width: 100%;
-  }
-  .tarjetas {
-    grid-template-columns: 1fr;
-  }
-  .tarjetas .tarjeta_img {
-    width: 95vw;
-    height: 200px;
-    margin-left: 20px;
-    margin-top: 65px;
-  }
-  .tarjetas .tarjeta_img p {
-    width: 100vw;
-    height: auto;
-    margin-left: 10px;
-    margin-right: 5px;
-  }
-  .tarjetas .tarjeta_img .tarjeta_titulo {
-    width: auto;
-    height: auto;
-    margin-top: 10px;
-  }
-<<<<<<< HEAD
-}
-@media (max-width: 1200) {
-  .portada {
-    max-width: 99%;
-  }
-  .destinos_container {
-    max-width: 95%;
-    height: 50%;
-  }
-  .tarjetas {
-    max-width: 70%;
-    height: 50vh;
-    gap: 4px;
-    grid-template-columns: 838px;
-    grid-template-rows: repeat(7, 500px);
+    height: 45%; /* Ajuste de altura de la imagen para pantallas medianas */
   }
   .tarjeta_img {
-    max-width: 60%;
-    height: 200px;
-    margin-left: 5px;
-    margin-top: 65px;
-  }
-  .tarjeta_container p {
-    max-width: 59%;
-    height: auto;
-    margin-left: 10px;
-    margin-right: 5px;
+    height: 300px; /* Ajuste de altura de la imagen */
   }
   .tarjeta_titulo {
-    max-width: 48%;
-    height: auto;
-    margin-top: 10px;
+    font-size: 1rem; /* Modificar el tamaño del título */
   }
-=======
->>>>>>> dev
+  .boton_vermas {
+    margin-left: 30px; /* Modificar el espaciado del botón */
+  }
+  .destinos_container .tarjetas {
+    grid-template-columns: repeat(1, 100%); /* Cambiar a una columna para pantallas medianas */
+    grid-template-rows: auto; /* Ajustar el tamaño de las filas automáticamente */
+  }
+  /* Estilos específicos para cada tarjeta en pantallas medianas, si es necesario */
+  .destinos_container .tarjetas .tarjeta_1,
+  .destinos_container .tarjetas .tarjeta_2,
+  .destinos_container .tarjetas .tarjeta_3,
+  .destinos_container .tarjetas .tarjeta_4,
+  .destinos_container .tarjetas .tarjeta_5,
+  .destinos_container .tarjetas .tarjeta_6 {
+    max-width: 100%;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .portada img {
+    width: 100vw;
+    height: 45%;
+  }
+  .tarjeta_img {
+    height: 350px; /* Modificar la altura de la imagen para pantallas grandes */
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .portada img {
+    width: 100vw;
+    height: 45%; /* Ajuste de altura de la imagen para pantallas medianas */
+  }
+  .tarjeta_img {
+    height: 450px; /* Modificar la altura de la imagen para pantallas grandes */
+  }
+  .tarjeta_titulo {
+    font-size: 1.2rem; /* Ajustar el tamaño del título para pantallas grandes */
+  }
+  .boton_vermas {
+    margin-left: 50px; /* Modificar el espaciado del botón para pantallas grandes */
+  }
+  /* Estilos específicos para cada tarjeta en pantallas grandes, si es necesario */
+  .destinos_container .tarjetas .tarjeta_1,
+  .destinos_container .tarjetas .tarjeta_2,
+  .destinos_container .tarjetas .tarjeta_3,
+  .destinos_container .tarjetas .tarjeta_4,
+  .destinos_container .tarjetas .tarjeta_5,
+  .destinos_container .tarjetas .tarjeta_6 {
+    max-width: 100%;
+    margin-top: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
