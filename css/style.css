@@ -34,51 +34,11 @@ a {
   font-size: 1.4rem;
 }
 
-nav {
-  max-width: 100%;
-  height: 60px;
-  background-color: rgba(254, 129, 45, 0.8235294118);
-  position: fixed;
-  z-index: 10;
-  top: 0;
-}
-nav .navegacion div {
-  font-family: "Quick-fox";
-  font-size: 1.3rem;
-  max-width: 100%;
-  height: 50px;
-  display: flex;
-  flex-wrap: wrap;
-}
-nav .navegacion div .menu {
-  max-width: 50%;
-  color: beige;
-  font-size: 1.5rem;
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: space-around;
-}
-nav .navegacion div .menu .menu_item {
-  width: auto;
+.color-item {
   font-family: "Montserrat";
-  padding: 15px;
 }
-nav .navegacion div .menu .menu_item a {
-  text-decoration: none;
-  color: beige;
-  font-size: 1.4rem;
-}
-
-#check_menu {
-  display: none;
-}
-
-.navegacion label i {
-  font-size: 2rem;
-  color: beige;
+.color-item:hover {
+  background-color: rgba(254, 129, 45, 0.8235294118);
 }
 
 .portada img {

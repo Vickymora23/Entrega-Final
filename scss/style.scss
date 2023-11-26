@@ -10,63 +10,75 @@ a {
   color: beige;
   font-size: 1.4rem;
 }
+// navegacion bts
+.color-item{
+  font-family: "Montserrat";
+    
+  &:hover{
+    background-color:#fe812dd2 ;
+   
 
-nav {
-  max-width: 100%;
-  height: 60px;
-  background-color: #fe812dd2;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-
-  .navegacion {
-    div {
-      font-family: "Quick-fox";
-      font-size: 1.3rem;
-      max-width: 100%;
-      height: 50px;
-      display: flex;
-      flex-wrap: wrap;
-
-      .menu {
-        max-width: 50%;
-        color: beige;
-        font-size: 1.5rem;
-        display: flex;
-        list-style: none;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        justify-content: space-around;
-
-        .menu_item {
-          width: auto;
-          font-family: "Montserrat";
-          padding: 15px;
-
-          a {
-            text-decoration: none;
-            color: beige;
-            font-size: 1.4rem;
-          }
-        }
-      }
-    }
   }
+ 
 }
 
-//menu mobile //
-#check_menu {
-  display: none;
-}
-.navegacion {
-  label {
-    i {
-      font-size: 2rem;
-      color: beige;
-    }
-  }
-}
+
+// nav {
+//   max-width: 100%;
+//   height: 60px;
+//   background-color: #fe812dd2;
+//   position: fixed;
+//   z-index: 10;
+//   top: 0;
+
+//   .navegacion {
+//     div {
+//       font-family: "Quick-fox";
+//       font-size: 1.3rem;
+//       max-width: 100%;
+//       height: 50px;
+//       display: flex;
+//       flex-wrap: wrap;
+
+//       .menu {
+//         max-width: 50%;
+//         color: beige;
+//         font-size: 1.5rem;
+//         display: flex;
+//         list-style: none;
+//         flex-wrap: wrap;
+//         align-items: center;
+//         align-content: center;
+//         justify-content: space-around;
+
+//         .menu_item {
+//           width: auto;
+//           font-family: "Montserrat";
+//           padding: 15px;
+
+//           a {
+//             text-decoration: none;
+//             color: beige;
+//             font-size: 1.4rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// //menu mobile //
+// #check_menu {
+//   display: none;
+// }
+// .navegacion {
+//   label {
+//     i {
+//       font-size: 2rem;
+//       color: beige;
+//     }
+//   }
+// }
 
 .portada {
   img {

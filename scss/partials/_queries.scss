@@ -1,60 +1,3 @@
-<<<<<<< HEAD
-
-@media (max-width:1200){
-  .portada {
-    max-width: 99%;
-  }
-  .destinos_container{
-    max-width: 95%;
-    height: 50%;
-  }
-  .tarjetas {
-    max-width: 70%;
-    height: 50vh;
-    gap: 4px;
-    grid-template-columns: 838px;
-    grid-template-rows: repeat(7, 500px);
-  }
-  .tarjeta_img {
-    max-width: 60%;
-    height: 200px;
-    margin-left: 5px;
-    margin-top: 65px;
-  }
-  .tarjeta_container p {
-    max-width: 59%;
-    height: auto;
-    margin-left: 10px;
-    margin-right: 5px;
-  }
-  .tarjeta_titulo {
-    max-width: 48%;
-    height: auto;
-    margin-top: 10px;
-  }
-
-}
-@media (max-width: 780px) {
-  .navegacion label {
-    display: block;
-  }
-  .menu {
-    display: none;
-  }
-  .navegacion #check_menu:checked ~ .menu {
-    background-color: #10706db1;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    margin-left: 0;
-    top: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    align-content: start;
-  }
-=======
 @media (max-width: 576px) {
   // .navegacion label {
   //   display: block;
@@ -75,7 +18,6 @@
   //   align-items: start;
   //   align-content: start;
   // }
->>>>>>> dev
   .portada {
     display: none;
   }
@@ -123,17 +65,8 @@
     max-width: 100%;
   }
   .tarjetas {
-<<<<<<< HEAD
-    max-width: 90%;
-    height: 50vh;
-    gap: 8px;
-    grid-template-columns: 419px;
-    grid-template-rows: repeat(6, 350px);
-  }
-=======
     grid-template-columns: 1fr;
   
->>>>>>> dev
   .tarjeta_img {
     width: 95vw;
     height: 200px;
@@ -154,43 +87,6 @@
     margin-top: 10px;
   }
 }
-<<<<<<< HEAD
-
-@media (max-width:1200){
-  .portada {
-    max-width: 99%;
-  }
-  .destinos_container{
-    max-width: 95%;
-    height: 50%;
-  }
-  .tarjetas {
-    max-width: 70%;
-    height: 50vh;
-    gap: 4px;
-    grid-template-columns: 838px;
-    grid-template-rows: repeat(7, 500px);
-  }
-  .tarjeta_img {
-    max-width: 60%;
-    height: 200px;
-    margin-left: 5px;
-    margin-top: 65px;
-  }
-  .tarjeta_container p {
-    max-width: 59%;
-    height: auto;
-    margin-left: 10px;
-    margin-right: 5px;
-  }
-  .tarjeta_titulo {
-    max-width: 48%;
-    height: auto;
-    margin-top: 10px;
-  }
-
-}
-=======
   }
 }
 
@@ -198,7 +94,6 @@
 
 
 
->>>>>>> dev
 
 // footer
 // footer {
@@ -219,7 +114,6 @@
 //       flex-wrap: wrap;
 //       flex-direction: column;
 //       // justify-content: start;
-<<<<<<< HEAD
 
 // }
 // .logo-container, .iconos{
@@ -252,41 +146,6 @@
 //     font-size: 1re;
 //   }
 // }
-
-=======
-
-// }
-// .logo-container, .iconos{
-//   display: flex;
-//   flex-direction: column;
-//   flex-wrap: wrap;
-//   align-items: start;
-//   align-content: start;
-// }
-// .logo-container, .iconos, i{
-//   font-size: 1rem;
-//   margin-top: 10px;
-// }
-// .informacion{
-//   margin-top: -150px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: start;
-// }
-// .informacion, i{
-// font-size: 1rem;
-// }
-// .noticias{
-//   margin-top: -150px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: start;
-//   }
-//   .noticias, h1, p{
-//     font-size: 1re;
-//   }
-// }
->>>>>>> dev
 
 
 
