@@ -177,18 +177,15 @@ a {
   .tarjetas {
     display: grid;
     grid-template-columns: repeat(2, 838px);
-<<<<<<< HEAD
     grid-template-rows: repeat(6, 700px);
     max-width: 90%;
     height: 100vh;
     gap: 4px 4px;
-=======
     grid-template-rows: repeat(7, 700px);
     max-width: 99%;
     height: 100vh;
     gap: 8px 8px;
     
->>>>>>> dev
 
     .tarjeta_1 {
       max-width: 98%;
@@ -393,13 +390,8 @@ div {
 
 /* FOOTER */
 footer {
-<<<<<<< HEAD
-  margin-top: 1300px;
-  background-color: #fe812dd2;
-=======
   margin-top: 10px;
   background-color:  #fe812dd2 ;
->>>>>>> dev
   max-width: 99%;
 }
 
@@ -409,7 +401,6 @@ h5 {
 
 i {
   font-size: 25px;
-<<<<<<< HEAD
 }
 
 //   #footer {
@@ -553,9 +544,7 @@ i {
 //     font-size: 2rem;
 //   }
 // }
-=======
- }
+ 
 
->>>>>>> dev
 
 @import "./partials/queries";
