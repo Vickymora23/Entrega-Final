@@ -1,162 +1,113 @@
-@media (max-width: 576px) {
-  // .navegacion label {
-  //   display: block;
-  // }
-  // .menu {
-  //   display: none;
-  // }
-  // .navegacion #check_menu:checked ~ .menu {
-  //   background-color: #10706db1;
-  //   width: 100%;
-  //   height: 100vh;
-  //   position: absolute;
-  //   margin-left: 0;
-  //   top: 60px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: start;
-  //   align-items: start;
-  //   align-content: start;
-  // }
-  .portada {
+ /* Media query para diseño responsive en 576px */
+@media screen and (max-width: 576px) {
+   .portada img {
     display: none;
   }
-  .destinos_container {
-    grid-template-columns:(1, 0.5fr);
-    grid-template-rows: repeat(7, 350px);
-  
-    .tarjetas {
-     grid-template-columns:(1, 0.5fr);
-  
-    .tarjeta_img {
-    max-width: 99vw;
-    height: 200px;
-    margin-left: 10px;
-    margin-top: 65px;
-  
-   .tarjeta_container {
-   p {
-    max-width: 100%;
-    height: auto;
-    margin-left: 5px;
-    margin-right: 5px;
-   }
-  
-   .tarjeta_titulo {
-    width: auto;
-    height: auto;
-    margin-top: 10px;
-  }
-}
-    }
-  }
-}
 
-// .titulos2 {
-//   font-family: "Backhome";
-//   font-size: 2, 5rem;
-//   margin-left: 0;
-//   margin-top: 0;
-// }
-}
-
-@media (min-width:577px) and (max-width:992px) {
-  .portada {
-    max-width: 100%;
-  }
-  .tarjetas {
-    grid-template-columns: 1fr;
-  
   .tarjeta_img {
-    width: 95vw;
-    height: 200px;
-    margin-left: 20px;
-    margin-top: 65px;
-  
-  .tarjeta_container {}
-  p {
-    width: 100vw;
-    height: auto;
-    margin-left: 10px;
-    margin-right: 5px;
+    height: 250px; /* Modificar la altura para pantallas más pequeñas */
   }
-  
+
   .tarjeta_titulo {
-    width: auto;
-    height: auto;
-    margin-top: 10px;
+    font-size: 1rem; /* Ajustar el tamaño del título */
+  }
+
+  .tarjeta_container {
+    padding: 10px; /* Añadir espaciado interno para mejor visualización en pantallas pequeñas */
+  }
+
+  .boton_vermas {
+    margin-left: 10px; /* Modificar el espaciado del botón */
+  }
+
+  .destinos_container .tarjetas {
+    grid-template-columns: 1fr; /* Cambiar a una columna para pantallas pequeñas */
+    grid-template-rows: auto; /* Ajustar el tamaño de las filas automáticamente */
+  }
+
+  /* Estilos específicos para cada tarjeta en pantallas más pequeñas, si es necesario */
+  .destinos_container .tarjetas .tarjeta_1,
+  .destinos_container .tarjetas .tarjeta_2,
+  .destinos_container .tarjetas .tarjeta_3,
+  .destinos_container .tarjetas .tarjeta_4,
+  .destinos_container .tarjetas .tarjeta_5,
+  .destinos_container .tarjetas .tarjeta_6 {
+    max-width: 100%;
+    margin-top: 5px;
   }
 }
+
+/* Media query para diseño responsive en 992px */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .portada img {
+    max-width: 100%;
+    height: 45%; /* Ajuste de altura de la imagen para pantallas medianas */
+  }
+  .tarjeta_img {
+    height: 300px; /* Ajuste de altura de la imagen */
+  }
+
+  .tarjeta_titulo {
+    font-size: 1rem; /* Modificar el tamaño del título */
+  }
+
+  .boton_vermas {
+    margin-left: 30px; /* Modificar el espaciado del botón */
+  }
+
+  .destinos_container .tarjetas {
+    grid-template-columns: repeat(1, 100%); /* Cambiar a una columna para pantallas medianas */
+    grid-template-rows: auto; /* Ajustar el tamaño de las filas automáticamente */
+  }
+
+  /* Estilos específicos para cada tarjeta en pantallas medianas, si es necesario */
+  .destinos_container .tarjetas .tarjeta_1,
+  .destinos_container .tarjetas .tarjeta_2,
+  .destinos_container .tarjetas .tarjeta_3,
+  .destinos_container .tarjetas .tarjeta_4,
+  .destinos_container .tarjetas .tarjeta_5,
+  .destinos_container .tarjetas .tarjeta_6 {
+    max-width: 100%;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .portada img {
+    width: 100vw;
+    height: 45%;
+  }
+  .tarjeta_img {
+    height: 350px; /* Modificar la altura de la imagen para pantallas grandes */
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+  .portada img {
+    width: 100vw;
+    height: 45%; /* Ajuste de altura de la imagen para pantallas medianas */
+  }
+  .tarjeta_img {
+    height: 450px; /* Modificar la altura de la imagen para pantallas grandes */
+  }
+
+  .tarjeta_titulo {
+    font-size: 1.2rem; /* Ajustar el tamaño del título para pantallas grandes */
+  }
+
+  .boton_vermas {
+    margin-left: 50px; /* Modificar el espaciado del botón para pantallas grandes */
+  }
+
+  /* Estilos específicos para cada tarjeta en pantallas grandes, si es necesario */
+  .destinos_container .tarjetas .tarjeta_1,
+  .destinos_container .tarjetas .tarjeta_2,
+  .destinos_container .tarjetas .tarjeta_3,
+  .destinos_container .tarjetas .tarjeta_4,
+  .destinos_container .tarjetas .tarjeta_5,
+  .destinos_container .tarjetas .tarjeta_6 {
+    max-width: 100%;
+    margin-top: 5px;
   }
 }
 
 
-
-
-
-
-// footer
-// footer {
-//   max-width: 100%;
-//   height: 100%;
-//   background-color: #f0721fd2;
-//   display: flex;
-//   flex-direction: column;
-
-// }
-//   #footer {
-//     height: 100%;
-//     max-width: 49%;
-//     background-color: #fe812dd2;
-// }
-// .footer-container {
-//       display: flex;
-//       flex-wrap: wrap;
-//       flex-direction: column;
-//       // justify-content: start;
-
-// }
-// .logo-container, .iconos{
-//   display: flex;
-//   flex-direction: column;
-//   flex-wrap: wrap;
-//   align-items: start;
-//   align-content: start;
-// }
-// .logo-container, .iconos, i{
-//   font-size: 1rem;
-//   margin-top: 10px;
-// }
-// .informacion{
-//   margin-top: -150px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: start;
-// }
-// .informacion, i{
-// font-size: 1rem;
-// }
-// .noticias{
-//   margin-top: -150px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: start;
-//   }
-//   .noticias, h1, p{
-//     font-size: 1re;
-//   }
-// }
-
-
-
-
-// @media (max-width: 991px) {
-//   html {
-//     font-size: 55%;
-//   }
-// }
-// @media (max-width: 768px) {
-//   html {
-//     font-size: 45%;
-//   }
-// }
