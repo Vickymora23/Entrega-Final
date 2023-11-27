@@ -50,7 +50,7 @@ a {
   opacity: 90%;
 }
 
-/* clases generales */
+/* clases generales de las tarjetas */
 .sombra {
   box-shadow: 5px 8px 8px 3px #000;
   border-radius: 7px 7px 7px 7px;
@@ -180,7 +180,12 @@ a {
 }
 
 /* pagina HISTORIA */
-.texto-carrousel {
+.pagina_historia div div div .img_carousel {
+  max-width: 99%;
+  height: auto;
+  padding: 10px;
+}
+.pagina_historia div div div .img_carousel .texto-carrousel {
   font-size: 2rem;
   font-weight: bolder;
   color: rgb(123, 30, 210);
@@ -188,24 +193,16 @@ a {
   border-radius: 5px 5px 5px 5px;
 }
 
-.slide {
-  margin-top: 60px;
-}
-.slide img {
-  max-width: 99%;
-  height: 40vw;
+.contenido-historia {
+  font-family: "RenogareSoft";
+  padding: 60px;
 }
 
 .titulo-historia {
-  background-color: rgb(109, 80, 255);
-  border: 1px solid;
-  left: 10px;
+  background-color: rgba(214, 56, 77, 0.318);
   max-width: 99%;
-  height: 55px;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  height: 70px;
+  padding: 15px;
   margin-top: 20px;
   margin-left: 5px;
   font-family: "Montserrat";
@@ -219,7 +216,6 @@ a {
 
 .card-historia {
   height: 550px;
-  background: linear-gradient(-98deg, #8f019f, #f28a57);
 }
 
 .img-tarjetas2 {
@@ -248,50 +244,7 @@ a {
   margin-top: 100px;
 }
 
-.img-excursiones,
-.container:hover {
-  filter: saturate(150%);
-}
-
 /* pagina ATRACTIVOS */
-.titulos1 {
-  font-family: "Montserrat";
-  font-size: 1.5rem;
-  width: 10%;
-  display: flex;
-  align-items: center;
-  align-content: space-around;
-  justify-content: space-between;
-}
-.titulos1 .card-group1 {
-  margin-top: 50px;
-}
-.titulos1 div .img-1 {
-  width: 450px;
-  height: 450px;
-}
-.titulos1 div .img-2 {
-  height: 400px;
-}
-
-.card-group2 {
-  margin-top: 40px;
-}
-
-.card-grupo3 {
-  margin-top: 40px;
-}
-
-div div div img-7 {
-  width: 900px;
-  height: 400px;
-}
-
-div div div .img-8 {
-  width: 900px;
-  height: 400px;
-}
-
 /* pagina CONTACTOS */
 .titulo-contacto {
   margin-top: 80px;
@@ -329,28 +282,28 @@ i {
     display: none;
   }
   .tarjeta_img {
-    height: 250px; /* Modificar la altura para pantallas más pequeñas */
+    height: 250px;
   }
   .tarjeta_titulo {
-    font-size: 1rem; /* Ajustar el tamaño del título */
+    font-size: 1rem;
   }
   .tarjeta_container {
-    padding: 10px; /* Añadir espaciado interno para mejor visualización en pantallas pequeñas */
+    padding: 10px;
   }
-  .boton_vermas {
-    margin-left: 10px; /* Modificar el espaciado del botón */
+  .tarjeta_container .boton_vermas {
+    margin-left: 10px;
   }
-  .destinos_container .tarjetas {
-    grid-template-columns: 1fr; /* Cambiar a una columna para pantallas pequeñas */
-    grid-template-rows: auto; /* Ajustar el tamaño de las filas automáticamente */
+  .tarjeta_container .destinos_container .tarjetas {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-bottom: 2770px;
   }
-  /* Estilos específicos para cada tarjeta en pantallas más pequeñas, si es necesario */
-  .destinos_container .tarjetas .tarjeta_1,
-  .destinos_container .tarjetas .tarjeta_2,
-  .destinos_container .tarjetas .tarjeta_3,
-  .destinos_container .tarjetas .tarjeta_4,
-  .destinos_container .tarjetas .tarjeta_5,
-  .destinos_container .tarjetas .tarjeta_6 {
+  .tarjeta_container .destinos_container .tarjetas .tarjeta_1,
+  .tarjeta_container .destinos_container .tarjetas .tarjeta_2,
+  .tarjeta_container .destinos_container .tarjetas .tarjeta_3,
+  .tarjeta_container .destinos_container .tarjetas .tarjeta_4,
+  .tarjeta_container .destinos_container .tarjetas .tarjeta_5,
+  .tarjeta_container .destinos_container .tarjetas .tarjeta_6 {
     max-width: 100%;
     margin-top: 5px;
   }
@@ -373,6 +326,7 @@ i {
   .destinos_container .tarjetas {
     grid-template-columns: repeat(1, 100%); /* Cambiar a una columna para pantallas medianas */
     grid-template-rows: auto; /* Ajustar el tamaño de las filas automáticamente */
+    padding-bottom: 2242px;
   }
   /* Estilos específicos para cada tarjeta en pantallas medianas, si es necesario */
   .destinos_container .tarjetas .tarjeta_1,

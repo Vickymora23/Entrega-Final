@@ -5,28 +5,27 @@
   }
 
   .tarjeta_img {
-    height: 250px; /* Modificar la altura para pantallas más pequeñas */
+    height: 250px;
   }
 
   .tarjeta_titulo {
-    font-size: 1rem; /* Ajustar el tamaño del título */
+    font-size: 1rem; 
   }
 
   .tarjeta_container {
-    padding: 10px; /* Añadir espaciado interno para mejor visualización en pantallas pequeñas */
-  }
+    padding: 10px; 
 
   .boton_vermas {
-    margin-left: 10px; /* Modificar el espaciado del botón */
+    margin-left: 10px; 
   }
 
   .destinos_container .tarjetas {
-    grid-template-columns: 1fr; /* Cambiar a una columna para pantallas pequeñas */
-    grid-template-rows: auto; /* Ajustar el tamaño de las filas automáticamente */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; 
+    padding-bottom: 2770px;
   }
 
-  /* Estilos específicos para cada tarjeta en pantallas más pequeñas, si es necesario */
-  .destinos_container .tarjetas .tarjeta_1,
+ .destinos_container .tarjetas .tarjeta_1,
   .destinos_container .tarjetas .tarjeta_2,
   .destinos_container .tarjetas .tarjeta_3,
   .destinos_container .tarjetas .tarjeta_4,
@@ -35,6 +34,8 @@
     max-width: 100%;
     margin-top: 5px;
   }
+
+}
 }
 
 /* Media query para diseño responsive en 992px */
@@ -58,6 +59,7 @@
   .destinos_container .tarjetas {
     grid-template-columns: repeat(1, 100%); /* Cambiar a una columna para pantallas medianas */
     grid-template-rows: auto; /* Ajustar el tamaño de las filas automáticamente */
+    padding-bottom: 2242px;
   }
 
   /* Estilos específicos para cada tarjeta en pantallas medianas, si es necesario */

@@ -90,7 +90,7 @@ a {
   }
 }
 
-/* clases generales */
+/* clases generales de las tarjetas */
 .sombra {
   box-shadow: 5px 8px 8px 3px #000;
   border-radius: 7px 7px 7px 7px;
@@ -236,32 +236,39 @@ a {
 }
 
 /* pagina HISTORIA */
-.texto-carrousel {
-  font-size: 2rem;
-  font-weight: bolder;
-  color: rgb(123, 30, 210);
-  background-color: rgba(0, 0, 0, 0.694);
-  border-radius: 5px 5px 5px 5px;
-}
-
-.slide {
-  margin-top: 60px;
-
-  img {
-    max-width: 99%;
-    height: 40vw;
+.pagina_historia {
+  div {
+    div {
+      div {
+        .img_carousel {
+          max-width: 99%;
+          height: auto;
+          padding: 10px;
+          
+          .texto-carrousel {
+            font-size: 2rem;
+            font-weight: bolder;
+            color: rgb(123, 30, 210);
+            background-color: rgba(0, 0, 0, 0.694);
+            border-radius: 5px 5px 5px 5px;
+          }
+        }
+      }
+    }
   }
 }
+
+.contenido-historia {
+  font-family: "RenogareSoft";
+  padding: 60px;
+  
+}
+
 .titulo-historia {
-  background-color: rgb(109, 80, 255);
-  border: 1px solid;
-  left: 10px;
+  background-color: rgba(214, 56, 77, 0.318);
   max-width: 99%;
-  height: 55px;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  height: 70px;
+  padding: 15px;
   margin-top: 20px;
   margin-left: 5px;
   font-family: "Montserrat";
@@ -274,7 +281,7 @@ a {
 
 .card-historia {
   height: 550px;
-  background: linear-gradient(-98deg, #8f019f, #f28a57);
+  
 }
 
 .img-tarjetas2 {
@@ -305,64 +312,60 @@ a {
 .contenedor2-exc {
   margin-top: 100px;
 }
- .img-excursiones,
-.container:hover {
-  filter: saturate(150%);
-}
+
+// .img-excursiones,
+// .container:hover {
+//   filter: saturate(180%);
+// }
 
 /* pagina ATRACTIVOS */
-.titulos1 {
-  font-family: "Montserrat";
-  font-size: 1.5rem;
-  width: 10%;
-  display: flex;
-  align-items: center;
-  align-content: space-around;
-  justify-content: space-between;
-  .card-group1 {
-    margin-top: 50px;
-  }
-  div {
-    .img-1 {
-      width: 450px;
-      height: 450px;
-    }
-  }
-  div {
-    .img-2 {
-      height: 400px;
-    }
-  }
-}
-.card-group2 {
-  margin-top: 40px;
-}
-.card-grupo3{
-  margin-top: 40px;
-}
+// .titulos1 {
+//   font-family: "Montserrat";
+//   font-size: 1.5rem;
+//   width: 10%;
+//   display: flex;
+//   align-items: center;
+//   align-content: space-around;
+//   justify-content: space-between;
+//   .card-group1 {
+//     margin-top: 31px;
+//   }
+//   div {
+//     .img-1 {
+//       width: 450px;
+//       height: 470px;
+//     }
+//   }
+//   div {
+//     .img-2 {
+//       height: 400px;
+//     }
+//   }
+// }
+// .card-group2 {
+//   margin-top: 20px;
+//   div {
+//     div {
+//       div {
+//         img-7 {
+//           width: 900px;
+//           height: 400px;
+//         }
+//       }
+//     }
+//   }
+// }
 
-  div {
-    div {
-      div {
-        img-7 {
-          width: 900px;
-          height: 400px;
-        }
-      }
-    }
-  }
-
-
-div {
-  div {
-    div {
-      .img-8 {
-        width: 900px;
-        height: 400px;
-      }
-    }
-  }
-}
+// div {
+//   div {
+//     div {
+//       .img-8 {
+//         width: 900px;
+//         height: 400px;
+//       }
+//     }
+//   }
+// }
 
 /* pagina CONTACTOS */
 .titulo-contacto{
