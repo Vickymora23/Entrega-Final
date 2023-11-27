@@ -43,7 +43,7 @@ a {
 }
 
 .portada img {
-  max-width: 99%;
+  max-width: 100%;
   padding: 2px;
   height: 50%;
   margin: 0;
@@ -181,7 +181,7 @@ a {
 
 /* pagina HISTORIA */
 .pagina_historia div div div .img_carousel {
-  max-width: 99%;
+  max-width: 100%;
   height: auto;
   padding: 10px;
 }
@@ -257,7 +257,7 @@ a {
 footer {
   margin-top: 10px;
   background-color: rgba(254, 129, 45, 0.8235294118);
-  max-width: 99%;
+  max-width: 100%;
 }
 
 h5 {
