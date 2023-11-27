@@ -116,85 +116,336 @@
       </div>
     </nav>-->
     <header></header>
-    <h1 class="titulos1">Atractivos</h1>
-      <div class="card-group card-group1 " >
-      <div class="card card-atractivos col-sm " >
-        <img src="./img/cascadas-nantyfall.jpg" class="card-img-top img-fluid img-thumbnail img-1" alt="card-group-image">
+    <h1 class="titulos1 text-center h-4 m-3 p-3">ATRACTIVOS</h1>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <img src="./img/cascadas-nantyfall.jpg" class="card-img-top img-fluid" alt="Cascadas Nant y Fall" style="width: 500px; height: 450px;">
+                  <div class="card-body">
+                      <h5 class="card-title h3 text-danger">Cascadas Nant y Fall</h5>
+                      <p class="card-text">Descripción breve</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Ver Más</button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="./img/tulipanesdia5.jpg" class="card-img-top img-fluid" alt="Campo de Tulipanes" style="width: 500px; height: 450px;">
+                <div class="card-body">
+                    <h5 class="card-title h3 text-danger">Campo de Tulipanes</h5>
+                    <p class="card-text">Descripción breve</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Ver Más</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+              <img src="./img/lahoyabase1.jpg" class="card-img-top img-fluid" alt="Centro de Esqui La Hoya" style="width: 500px; height: 450px;">
+              <div class="card-body">
+                  <h5 class="card-title h3 text-danger">Centro de Esqui La Hoya</h5>
+                  <p class="card-text">Descripción breve</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Ver Más</button>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="./img/lagokrugger.jpg" class="card-img-top img-fluid" alt="Lago Krugger" style="width: 500px; height: 450px;">
+            <div class="card-body">
+                <h5 class="card-title h3 text-danger">Parque Nacional Los Alerces</h5>
+                <p class="card-text">Descripción breve</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">Ver Más</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4"> 
+          <img src="./img/latrochita1.jpg" class="card-img-top img-fluid" alt="La Trochita" style="width: 500px; height: 450px;">
+          <div class="card-body">
+              <h5 class="card-title h3 text-danger">La Trochita</h5>
+              <p class="card-text">Descripción breve</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">Ver Más</button>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card mb-4">
+        <img src="./img/museo-molino-nant-fach.jpg" class="card-img-top img-fluid" alt="Molino Nant Fach" style="width: 500px; height: 450px;">
         <div class="card-body">
-          <h5 class="card-title">Cascadas Nant y Fall</h5>
+            <h5 class="card-title h3 text-danger">Molino Nant Fach</h5>
+            <p class="card-text">Descripción breve</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal6">Ver Más</button>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+  <div class="card mb-4">
+      <img src="./img/cartelz.jpg" class="card-img-top img-fluid" alt="Laguna La Z" style="width: 500px; height: 450px;">
+      <div class="card-body">
+          <h5 class="card-title h3 text-danger">Laguna La "Z"</h5>
+          <p class="card-text">Descripción breve</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal7">Ver Más</button>
+      </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card mb-4">
+      <img src="./img/piedraparada.jpg" class="card-img-top img-fluid" alt="Piedra Parada" style="width: 500px; height: 450px;">
+      <div class="card-body">
+          <h5 class="card-title h3 text-danger">Piedra Parada</h5>
+          <p class="card-text">Descripción breve</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal8">Ver Más</button>
+      </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card mb-4">
+      <img src="./img/te-gales-trev.jpg" class="card-img-top img-fluid" alt="Te Galés - Trevelin" style="width: 500px; height: 450px;">
+      <div class="card-body">
+          <h5 class="card-title h3 text-danger">Te Galés - Trevelin</h5>
+          <p class="card-text">Descripción breve</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal9">Ver Más</button>
+      </div>
+  </div>
+</div>
+      </div>
+  </div>
+  
+  <!-- Ventana emergente -->
+  <div class="modal fade" id="modal1">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Cascadas Nant y Fall</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p>Contenido detallado de Cascadas Nant y Fall.</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal fade" id="modal2">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Campo de Tulipanes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Contenido detallado de Campo de Tulipanes.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal3">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Centro de Esqui La Hoya</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Contenido detallado de Centro de Esqui La Hoya.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modal4">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Parque Nacional Los Alerces</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Contenido detallado de Parque Nacional Los Alerces.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal5">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">La Trochita</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Contenido detallado de La Trochita.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal6">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Molino Nant Fach</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Contenido detallado de Molino Nant Fach.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal7">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Laguna la "Z</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Contenido detallado de Laguna la "Z.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal8">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Piedra Parada</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Contenido detallado de Piedra Parada.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal9">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Te Galés - Trevelin</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Contenido detallado de Te Galés - Trevelin.</p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+      <!-- <div class="card-group card-group1 border-0 text-center p-5 " >
+      <div class="card card-atractivos col-sm border-0 p-5 " >
+        <img src="./img/cascadas-nantyfall.jpg" class="card-img-top img-fluid img-thumbnail img-1" alt="card-group-image" style="width: 450px; height: 450px;">
+        <div class="card-body">
+          <h5 class="card-title h3 text-danger">Cascadas Nant y Fall</h5>
           <p class="card-text">Cascadas Nant y dfall</p>
         </div>
           </div>
-      <div class="card col-sm">
-        <img src="./img/tulipanesdia5.jpg" class="card-img-top img-fluid img-thumbnail img-2" alt="card-group-image">
+      <div class="card col-sm border-0 p-5 ">
+        <img src="./img/tulipanesdia5.jpg" class="card-img-top img-fluid img-thumbnail img-2 " alt="card-group-image" style="width: 450px; height: 450px;">
         <div class="card-body">
-          <h5 class="Campo de Tulipanes">Campo de Tulipanes</h5>
+          <h5 class="Campo de Tulipanes h3 text-danger">Campo de Tulipanes</h5>
           <p class="card-text">Campo de Tulipanes</p>
         </div>
         
       </div>
-      <div class="card col-sm" >
-        <img src="./img/lahoyabase1.jpg" class="card-img-top img-fluid img-thumbnail" alt="card-group-image">
+      <div class="card col-sm border-0 p-5 " >
+        <img src="./img/lahoyabase1.jpg" class="card-img-top img-fluid img-thumbnail" alt="card-group-image" style="width: 450px; height: 450px;">
         <div class="card-body">
-          <h5 class="card-title">Cetro de Esqui "La Hoya"</h5>
+          <h5 class="card-title h3 text-danger">Cetro de Esqui "La Hoya"</h5>
           <p class="card-text">Centro de Esqui La Hoya</p>
         </div>
         </div>
     </div>
-    <div class="card-group card-group2">
-      <div class="card col-sm">
-        <img src="./img/lagokrugger.jpg" class="card-img-top img-fluid img-thumbnail" alt="card-group-image">
+    <div class="card-group card-group2 border-0 p-5 ">
+      <div class="card col-sm border-0 p-5 ">
+        <img src="./img/lagokrugger.jpg" class="card-img-top img-fluid img-thumbnail" alt="card-group-image" style="width: 450px; height: 450px;">
         <div class="card-body">
-          <h5 class="card-title">Parque Nacional Los Alerces</h5>
+          <h5 class="card-title h3 text-danger">Parque Nacional Los Alerces</h5>
           <p class="card-text">Parque Nacional Los Alerces</p>
         </div>
         
       </div>
-      <div class="card col-sm">
-        <img src="./img/latrochita1.jpg" class="card-img-top img-fluid img-thumbnail" alt="card-group-image">
+      <div class="card col-sm border-0 p-5 ">
+        <img src="./img/latrochita1.jpg" class="card-img-top img-fluid img-thumbnail" alt="card-group-image" style="width: 450px; height: 450px;">
         <div class="card-body">
-          <h5 class="card-title">La Trochita</h5>
+          <h5 class="card-title h3 text-danger">La Trochita</h5>
           <p class="card-text">La Trochita.</p>
         </div>
         
       </div>
-      <div class="card col-sm">
-        <img src="./img/museo-molino-nant-fach.jpg" class="card-img-top img-fluid img-thumbnail" alt="card-group-image">
+      <div class="card col-sm border-0 p-5 ">
+        <img src="./img/museo-molino-nant-fach.jpg" class="card-img-top img-fluid img-thumbnail" alt="card-group-image" style="width: 450px; height: 450px;">
         <div class="card-body">
-          <h5 class="card-title">Molino Nant Fach</h5>
+          <h5 class="card-title h3 text-danger">Molino Nant Fach</h5>
           <p class="card-text">Molino Nant Fach</p>
         </div>
         
       </div>
     </div>
-    <div class="card col-sm">
-      <div class="row g-0">
-        <div class="col-5 col-sm-4">
-          <img src="./img/cartelz.jpg" class="img-fluid w-100 img-thumbnail img-7" alt="card-horizontal-image">
-        </div>
-        <div class="col-7 col-sm-8">
-          <div class="card-body">
-            <h5 class="card-title">Laguna La Z</h5>
-            <p class="card-text">Laguna La Z</p>
-           </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="card col-sm">
-      <div class="row g-0">
-        <div class="col-5 col-sm-4">
-          <img src="./img/piedraparada.jpg" class="img-fluid w-100 img-thumbnail img-8" alt="card-horizontal-image">
+    <div class="card-group card-group3 border-0 p-5 ">
+      <div class="card col-sm border-0 p-5 ">
+        <img src="./img/cartelz.jpg" class="card-img-top img-fluid img-thumbnail" alt="card-group-image" style="width: 450px; height: 450px;">
+        <div class="card-body">
+          <h5 class="card-title h3 text-danger">Laguna la "Z"</h5>
+          <p class="card-text">Laguna la "Z"</p>
         </div>
-        <div class="col-7 col-sm-8">
-          <div class="card-body">
-            <h5 class="card-title">Piedra Parada</h5>
-            <p class="card-text">Piedra Parada</p>
-            </div>
+        
       </div>
-    </div>
+      <div class="card col-sm border-0 p-5 ">
+        <img src="./img/piedraparada.jpg" class="card-img-top img-fluid img-thumbnail" alt="card-group-image" style="width: 450px; height: 450px;">
+        <div class="card-body">
+          <h5 class="card-title h3 text-danger">Piedra Parada</h5>
+          <p class="card-text">Piedra Parada</p>
+        </div>
+        
+      </div>
+      <div class="card col-sm border-0 p-5 ">
+        <img src="./img/te-gales-trev.jpg" class="card-img-top img-fluid img-thumbnail" alt="card-group-image" style="width: 450px; height: 450px;">
+        <div class="card-body">
+          <h5 class="card-title h3 text-danger">Te Galés - Trevelin</h5>
+          <p class="card-text">Te Galés - Trevelin</p>
+        </div>
+        
+      </div>
+    </div> -->
 
-    <!-- footer -->
    
  <!-- footer -->
  <footer class="pt-5 pb-4">
@@ -287,6 +538,7 @@
       </div>
     </div>
   </div>
-
+  <!-- script java -->
+  <script src="./js/bootstrap.js"></script>
   </body>
 </html>
