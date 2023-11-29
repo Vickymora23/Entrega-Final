@@ -11,16 +11,28 @@ a {
   font-size: 1.4rem;
 }
 // navegacion bts
+.navbar {
+  position: relative;
+  z-index: 9999; 
+  background-color: #fe812dd2 ;
+  color: beige;
+
+}
 .color-item{
   font-family: "Montserrat";
+  color: beige;
+  font-weight: 1.5rem;
     
   &:hover{
-    background-color:#fe812dd2 ;
-   
-
-  }
+    background-color: lightslategray ;
+   }
  
 }
+.navbar-collapse{
+  background-color: #fe812dd2 ;
+  color: beige;
+}
+
 
 
 // nav {
