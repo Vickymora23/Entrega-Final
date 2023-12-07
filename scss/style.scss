@@ -1,4 +1,4 @@
-// @import "./partials/variables";
+/* import fonts */
 @import "./partials/fonts";
 * {
   margin: 0;
@@ -32,65 +32,6 @@ a {
   background-color: #fe812dd2 ;
   color: beige;
 }
-
-
-
-// nav {
-//   max-width: 100%;
-//   height: 60px;
-//   background-color: #fe812dd2;
-//   position: fixed;
-//   z-index: 10;
-//   top: 0;
-
-//   .navegacion {
-//     div {
-//       font-family: "Quick-fox";
-//       font-size: 1.3rem;
-//       max-width: 100%;
-//       height: 50px;
-//       display: flex;
-//       flex-wrap: wrap;
-
-//       .menu {
-//         max-width: 50%;
-//         color: beige;
-//         font-size: 1.5rem;
-//         display: flex;
-//         list-style: none;
-//         flex-wrap: wrap;
-//         align-items: center;
-//         align-content: center;
-//         justify-content: space-around;
-
-//         .menu_item {
-//           width: auto;
-//           font-family: "Montserrat";
-//           padding: 15px;
-
-//           a {
-//             text-decoration: none;
-//             color: beige;
-//             font-size: 1.4rem;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// //menu mobile //
-// #check_menu {
-//   display: none;
-// }
-// .navegacion {
-//   label {
-//     i {
-//       font-size: 2rem;
-//       color: beige;
-//     }
-//   }
-// }
 
 .portada {
   img {
@@ -189,10 +130,6 @@ a {
   .tarjetas {
     display: grid;
     grid-template-columns: repeat(2, 838px);
-    grid-template-rows: repeat(6, 700px);
-    max-width: 90%;
-    height: 100vh;
-    gap: 4px 4px;
     grid-template-rows: repeat(7, 700px);
     max-width: 99%;
     height: 100vh;
@@ -247,7 +184,7 @@ a {
   }
 }
 
-/* pagina HISTORIA */
+/* estilo pagina HISTORIA */
 .pagina_historia {
   div {
     div {
@@ -286,10 +223,6 @@ a {
   font-family: "Montserrat";
   font-weight: 600;
 }
-.contenido-historia {
-  font-family: "RenogareSoft";
-  max-width: 98%;
-}
 
 .card-historia {
   height: 550px;
@@ -297,32 +230,36 @@ a {
 }
 
 .img-tarjetas2 {
-  max-width:99%;
+  width: 48vw;
   height: 350px;
   margin-left: 6px;
   align-items: center;
 }
 
-/* pagina EXCURSIONES */
+/* estilos pagina EXCURSIONES */
 .cabecera {
   .img-portada-exc {
-   width: 98vw;
-   height: 400px;
-    margin-left: 8px;
+    width: 100vw;
+    height: 400px;
 
-    &:hover {
+    .img-portada-exc:hover {
       opacity: 0.8;
     }
   }
 }
-.contenedor1-exc {
-  margin-top: 60px;
+.contenedor1 {
+  margin-top: 30px;
   margin-bottom: 30px;
-  
- 
+  div {
+    div {
+      .img-excursiones {
+        height: 600px;
+      }
+    }
+  }
 }
-.contenedor2-exc {
-  margin-top: 100px;
+.contenedor2 {
+  margin-top: 30px;
 }
 .boton-acordion{
   font-family: "Montserrat";
@@ -337,7 +274,7 @@ a {
 }
 }
 
-/* pagina ATRACTIVOS */
+/* estilos pagina ATRACTIVOS */
 .boton-atractivos{
   font-family: "Montserrat";
   font-size: 1.3rem;
@@ -352,14 +289,7 @@ a {
   }
 }
 
-/* pagina CONTACTOS */
-.titulo-contacto{
-  margin-top: 80px;
-  max-width: 100%;
-}
-
-
-
+/* estilos pagina CONTACTOS */
 .header-container {
   .form-position {
     margin-top: 160px;
@@ -376,163 +306,22 @@ a {
   }
 }
 
-/* FOOTER */
+/* estilos FOOTER */
 footer {
   margin-top: 10px;
   background-color:  #fe812dd2 ;
   max-width: 100%;
  }
 
-h5 {
+  h5{
   font-family: "Montserrat" !important;
-}
+  }
+  
 
-i {
+
+i{
   font-size: 25px;
-}
+ }
 
-//   #footer {
-//     margin-top: 190px;
-//     height: 75vh;
-//     max-width: 99%;
-//     background-color: #fe812dd2;
-
-//     .footer-container {
-//       display: flex;
-//       justify-content: space-around;
-//       flex-wrap: wrap;
-
-//       i:hover {
-//         color: rgb(143, 155, 122);
-//         cursor: pointer;
-//       }
-
-//       .logo-container,
-//       .informacion,
-//       .noticias {
-//         display: flex;
-//         justify-content: center;
-//         margin: 1rem 3rem;
-//         color: beige;
-//         flex: 1 0 25rem;
-//         flex-flow: column wrap;
-//       }
-//       .logo-container {
-//         .iconos {
-//           display: flex;
-//           flex-direction: column;
-//           flex-wrap: wrap;
-//           align-items: start;
-//           align-content: start;
-//           justify-content: space-around;
-//           margin-top: 65px;
-
-//           i {
-//             font-family: "Montserrat";
-//             font-size: 2rem;
-//             margin: 1rem;
-//             margin-top: 40px;
-
-//             &::after {
-//               content: attr(data-text);
-//               font-size: 2rem;
-//               margin: 0 2rem;
-//               font-family: "Montserrat";
-//             }
-//           }
-//         }
-//       }
-//       .informacion {
-//         margin-top: 63px;
-
-//         i {
-//           font-family: "Montserrat";
-//           margin: 2rem 0;
-//           font-size: 2.5rem;
-//           margin-top: 30px;
-
-//           &::after {
-//             content: attr(data-text);
-//             font-size: 2rem;
-//             margin: 0 2rem;
-//             font-family: "Montserrat";
-//           }
-//         }
-//       }
-//       .noticias {
-//         margin-top: 65px;
-
-//         h1 {
-//           font-family: "Montserrat";
-//           font-size: 3rem;
-//           margin-top: 25px;
-//         }
-//         p {
-//           margin-top: 10px;
-//           font-family: "Montserrat";
-//           font-size: 1.3rem;
-//         }
-//         input[type="email"] {
-//           font-family: "Montserrat";
-//           margin-top: 10px;
-//           outline: none;
-//           border: none;
-//           padding: 0 1 rem;
-//           height: 4rem;
-//           background: rgba(255, 255, 255, 0.2);
-//           color: beige;
-//         }
-//         input[type="submit"] {
-//           font-family: "Montserrat";
-//           width: 100px;
-//           height: 50px;
-//           font-family: "RenogareSoft";
-//           color: gray;
-//           font-size: 1rem;
-//           border: 3px solid;
-//           border-color: gray;
-//           border-radius: 5px 5px 5px 5px;
-//           display: flex;
-//           align-items: center;
-//           align-content: center;
-//           justify-content: center;
-//           margin-left: 50px;
-//           margin-top: 10px;
-//           transition: 0.5s;
-//           object-fit: cover;
-
-//           &:hover {
-//             transform: scale(1.2);
-//           }
-//         }
-//       }
-//     }
-//     .texto-final {
-//       width: 100%;
-
-//       h1 {
-//         margin-top: 60px;
-//         font-family: "Montserrat";
-//         font-size: 1.2rem;
-//         padding: 1rem 0;
-//         text-align: center;
-//         color: beige;
-//       }
-//     }
-//   }
-// }
-// .contenedor-footer {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: 100vh;
-//   width: 100vw;
-
-//   h1 {
-//     font-size: 2rem;
-//   }
-// }
- 
-
-
+/* import queries */
 @import "./partials/queries";
