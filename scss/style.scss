@@ -1,4 +1,4 @@
-@import "./partials/variables";
+// @import "./partials/variables";
 @import "./partials/fonts";
 * {
   margin: 0;
@@ -324,60 +324,33 @@ a {
 .contenedor2-exc {
   margin-top: 100px;
 }
-
-// .img-excursiones,
-// .container:hover {
-//   filter: saturate(180%);
-// }
+.boton-acordion{
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  height: 55px;
+  width: 100%;
+  background-image: linear-gradient(to right, #D16BA5, #86A8E7, #5FFBF1);
+  background-size: 400%;
+  background-position: left;
+  &:hover{
+    background-position: right;
+}
+}
 
 /* pagina ATRACTIVOS */
-// .titulos1 {
-//   font-family: "Montserrat";
-//   font-size: 1.5rem;
-//   width: 10%;
-//   display: flex;
-//   align-items: center;
-//   align-content: space-around;
-//   justify-content: space-between;
-//   .card-group1 {
-//     margin-top: 31px;
-//   }
-//   div {
-//     .img-1 {
-//       width: 450px;
-//       height: 470px;
-//     }
-//   }
-//   div {
-//     .img-2 {
-//       height: 400px;
-//     }
-//   }
-// }
-// .card-group2 {
-//   margin-top: 20px;
-//   div {
-//     div {
-//       div {
-//         img-7 {
-//           width: 900px;
-//           height: 400px;
-//         }
-//       }
-//     }
-//   }
-// }
+.boton-atractivos{
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  height: 50px;
+  width: 160px;
+  background-image: linear-gradient(to right, #845EC2, #D65DB1,#FF6F91, #FF9671, #FFC75F, #F9F871);
+  background-size: 400%;
+  background-position: left;
+  &:hover{
+    background-position: right;
 
-// div {
-//   div {
-//     div {
-//       .img-8 {
-//         width: 900px;
-//         height: 400px;
-//       }
-//     }
-//   }
-// }
+  }
+}
 
 /* pagina CONTACTOS */
 .titulo-contacto{
