@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -92,42 +93,8 @@
 </div>
 </nav>
 
-
-
-    <!-- <nav class="navegacion">
-      <div>
-          menu mobile 
-        <input type="checkbox" id="check_menu" />
-
-        <ul class="menu">
-          <li class="menu_item">
-            <i class="bx bx-home-heart"></i>
-            <a href="./index.html">Inicio</a>
-          </li>
-          <li class="menu_item">
-            <i class="bx bx-book-reader"></i>
-            <a href="./historia.html">Historia</a>
-          </li>
-          <li class="menu_item">
-            <i class="bx bx-landscape"></i>
-            <a href="./atractivos.html">Atractivos</a>
-          </li>
-          <li class="menu_item">
-            <i class="bx bx-map-alt"></i>
-            <a href="./excursiones.html">Excursiones</a>
-          </li>
-          <li class="menu_item">
-            <i class="bx bx-user-pin"></i>
-            <a href="./contacto.html">Contacto </a>
-          </li>
-        </ul>
-        <label for="check_menu">
-          <i class="bx bx-menu"></i>
-        </label>
-      </div>
-    </nav> -->
     <header class="pagina_historia">
-      <!-- carousel -->
+      <!-- carousel bs -->
       <div class="row">
         <div
           id="carouselWithCaptions"
@@ -208,6 +175,7 @@
         </div>
       </div>
     </header>
+    <!-- primer linea de texto -->
     <div class="row historia-2da">
       <p class="h1 titulo-historia text-center border rounded-0">Conociendo la ciudad</p>
       <p class="h3 contenido-historia text-center">
@@ -240,7 +208,7 @@
         la hermosa provincia de Chubut, en el sur de Argentina.
       </p>
     </div>
-    <!-- segundas tarjetas -->
+    <!-- tarjetas -->
     <div class="row">
       <div class="row row-cols-1 row-cols-sm-2 g-3">
         <div class="col">
@@ -333,6 +301,7 @@
         </div>
       </div>
     </div>
+    <!-- segunda línea de texto -->
     <div class="row">
       <p class="h1 titulo-historia text-center border rounded-0">Conociendo la ciudad</p>
       <p class="h3 contenido-historia text-wrap text-center ">
@@ -428,99 +397,96 @@
       </p>
     </div>
 
-    <!-- footer -->
-    <!-- footer -->
-    <footer class="pt-5 pb-4">
-      <div class="container text-center text-md-start">
-        <div class="row text-center text-md-start">
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-secondary text-uppercase mb-4 font-weight-bold">
-              NOSOTROS
-            </h5>
-            <hr class="mb-4" />
-            <p class="h5 font-weight-bold">
-              Bienvenidos a Esquel un encantador destino ubicado en la región de
-              la Patagonia Argentina. Esquel es reconocido por su belleza
-              natural, aventuras al aire libre y su rica cultura patagónica,
-              convirtiéndolo en un lugar ideal para viajeros ávidos de
-              experiencias auténticas. 
-              Esta página es una ventana al paraíso patagónico,
-              ofreciendo una experiencia completa para los amantes de la
-              naturaleza, la aventura y la cultura local. ¡Vení a descubrir
-              Esquel y sumrrgite en la magia de la Patagonia Argentina!
-            </p>
-          </div>
-          <form class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <div class="form-group">
-              <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">
-                Ingrese su email para recibir noticias
+      <!-- footer -->
+      <footer class="pt-5 pb-4">
+        <div class="container text-center text-md-start">
+          <div class="row text-center text-md-start">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-secondary text-uppercase mb-4 fw-bold">
+                NOSOTROS
               </h5>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="E-mail"
-              />
-
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <button
-                  type="submit"
-                  class="h5 btn btn-light flex justify-content-end"
-                >
-                  Enviar
-                </button>
-              </div>
+              <hr class="mb-4" />
+              <p class="h5 font-weight-bold">
+                Bienvenidos a Esquel un encantador destino ubicado en la región de
+                la Patagonia Argentina. Esquel es reconocido por su belleza
+                natural, aventuras al aire libre y su rica cultura patagónica,
+                convirtiéndolo en un lugar ideal para viajeros ávidos de
+                experiencias auténticas. 
+                ¡Vení a descubrir Esquel y sumrrgite en la magia de la Patagonia Argentina!
+              </p>
             </div>
-          </form>
-
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">
-              Informacion
-            </h5>
+            <form class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <div class="form-group">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-secondary fw-bold">
+                  Ingrese su email para recibir noticias
+                </h5>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="E-mail"
+                />
+  
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <button
+                    type="submit"
+                    class="h5 btn btn-light flex justify-content-end fw-bold"
+                  >
+                    Enviar
+                  </button>
+                </div>
+              </div>
+            </form>
+  
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-secondary fw-bold">
+                Informacion
+              </h5>
+              <hr class="mb-4" />
+              <p class="h5">
+                <li class="fas fa-home me-3 fw-bold"></li>
+                Esquel, Chubut, Argentina
+              </p>
+              <p class="h5">
+                <li class="fas fa-envelope me-3 fw-bold "></li>
+                esquelsiempre@gmail.com
+              </p>
+              <p class="h5">
+                <li class="fas fa-phone me-3 fw-bold "></li>
+                +5402945666777
+              </p>
+            </div>
+  
             <hr class="mb-4" />
-            <p class="h5">
-              <li class="fas fa-home me-3"></li>
-              Esquel, Chubut, Argentina
-            </p>
-            <p class="h5">
-              <li class="fas fa-envelope me-3"></li>
-              esquelsiempre@gmail.com
-            </p>
-            <p class="h5">
-              <li class="fas fa-phone me-3"></li>
-              +5402945666777
-            </p>
-          </div>
-
-          <hr class="mb-4" />
-
-          <div class="text-center mb-2">
-            <p>
-              Copyright. Todos los derechos reservados ©
-              <a href="#" class="text-dark"></a>
-            </p>
-          </div>
-
-          <div class="text-center">
-            <ul class="list-inline-item">
-              <a href="#" class="text-dark"> <i class="fab fa-facebook"></i></a>
-            </ul>
-            <ul class="list-inline-item">
-              <a href="#" class="text-dark">
-                <i class="fab fa-instagram"></i
-              ></a>
-            </ul>
-            <ul class="list-inline-item">
-              <a href="#" class="text-dark"> <i class="fab fa-twitter"></i></a>
-            </ul>
-            <ul class="list-inline-item">
-              <a href="#" class="text-dark"> <i class="fab fa-youtube"></i></a>
-            </ul>
+  
+            <div class="text-center mb-2 fw-bold">
+              <p>
+                Copyright. Todos los derechos reservados ©
+                <a href="#" class="text-dark"></a>
+              </p>
+            </div>
+  
+            <div class="text-center">
+              <ul class="list-inline-item">
+                <a href="#" class="text-dark"> <i class="fab fa-facebook"></i></a>
+              </ul>
+              <ul class="list-inline-item">
+                <a href="#" class="text-dark">
+                  <i class="fab fa-instagram"></i
+                ></a>
+              </ul>
+              <ul class="list-inline-item">
+                <a href="#" class="text-dark"> <i class="fab fa-twitter"></i></a>
+              </ul>
+              <ul class="list-inline-item">
+                <a href="#" class="text-dark"> <i class="fab fa-youtube"></i></a>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
 
+      <!-- script js -->
     <script src="./js/bootstrap.js"></script>
   </body>
 </html>
