@@ -58,7 +58,7 @@ a {
 }
 
 .portada img {
-  max-width: 100%;
+  max-width: 99%;
   padding: 2px;
   height: 50%;
   margin: 0;
@@ -100,7 +100,7 @@ a {
 }
 
 .tarjeta_container {
-  max-width: 100%;
+  max-width: 99%;
 }
 .tarjeta_container p {
   max-width: 100%;
@@ -197,7 +197,7 @@ a {
 
 /* pagina HISTORIA */
 .pagina_historia div div div .img_carousel {
-  max-width: 100%;
+  max-width: 99%;
   height: auto;
   padding: 10px;
 }
@@ -216,7 +216,7 @@ a {
 
 .titulo-historia {
   background-color: rgba(214, 56, 77, 0.318);
-  max-width: 99%;
+  max-width: 98%;
   height: 70px;
   padding: 15px;
   margin-top: 20px;
@@ -324,7 +324,7 @@ a {
 footer {
   margin-top: 10px;
   background-color: rgba(254, 129, 45, 0.8235294118);
-  max-width: 100%;
+  max-width: 99%;
 }
 
 h5 {
