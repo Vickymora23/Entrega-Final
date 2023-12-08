@@ -13,23 +13,23 @@ a {
 // navegacion bts
 .navbar {
   position: relative;
-  z-index: 9999; 
-  background-color: #fe812dd2 ;
+  z-index: 9999;
+  background-color: #fe812dd2;
   color: beige;
-
 }
-.color-item{
+.color-item {
   font-family: "Montserrat";
   color: beige;
   font-weight: 1.5rem;
+  transition: all 1s ease-in-out;
+
+  &:hover {
+    background-color: #1e8c4446;
     
-  &:hover{
-    background-color: lightslategray ;
-   }
- 
+  }
 }
-.navbar-collapse{
-  background-color: #fe812dd2 ;
+.navbar-collapse {
+  background-color: #fe812dd2;
   color: beige;
 }
 
@@ -57,6 +57,7 @@ a {
   box-shadow: 0px 2px 2px #000000a8;
   transition: 0.5s;
   object-fit: cover;
+  transition: all .45s;
 
   &:hover {
     transform: scale(1.1);
@@ -120,21 +121,19 @@ a {
 
 .destinos_container {
   background-color: none;
-   max-width: 90%;
-   padding-left: 5px;
-   padding-top: 10px;
-   padding-bottom: 1305px;
-   padding-right: 20px;
+  max-width: 90%;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 1305px;
+  padding-right: 20px;
 
-  
   .tarjetas {
     display: grid;
-    grid-template-columns: repeat(2, 838px);
+    grid-template-columns: repeat(2, 49vw);
     grid-template-rows: repeat(7, 700px);
     max-width: 99%;
     height: 100vh;
     gap: 8px 8px;
-    
 
     .tarjeta_1 {
       max-width: 98%;
@@ -193,7 +192,7 @@ a {
           max-width: 100%;
           height: auto;
           padding: 10px;
-          
+
           .texto-carrousel {
             font-size: 2rem;
             font-weight: bolder;
@@ -210,7 +209,6 @@ a {
 .contenido-historia {
   font-family: "RenogareSoft";
   padding: 60px;
-  
 }
 
 .titulo-historia {
@@ -226,7 +224,6 @@ a {
 
 .card-historia {
   height: 550px;
-  
 }
 
 .img-tarjetas2 {
@@ -261,38 +258,59 @@ a {
 .contenedor2 {
   margin-top: 30px;
 }
-.boton-acordion{
+.boton-acordion {
   font-family: "Montserrat";
   font-size: 1.2rem;
   height: 55px;
   width: 100%;
-  background-image: linear-gradient(to right, #D16BA5, #86A8E7, #5FFBF1);
+  background-image: linear-gradient(to right, #d16ba5, #86a8e7, #5ffbf1);
   background-size: 400%;
   background-position: left;
-  &:hover{
+  &:hover {
     background-position: right;
-}
+  }
 }
 
-/* estilos pagina ATRACTIVOS */
-.boton-atractivos{
+/* pagina ATRACTIVOS */
+.boton-atractivos {
   font-family: "Montserrat";
   font-size: 1.3rem;
   height: 50px;
   width: 160px;
-  background-image: linear-gradient(to right, #845EC2, #D65DB1,#FF6F91, #FF9671, #FFC75F, #F9F871);
+  background-image: linear-gradient(
+    to right,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+  );
   background-size: 400%;
   background-position: left;
-  &:hover{
+  &:hover {
     background-position: right;
-
   }
 }
 
 /* estilos pagina CONTACTOS */
 .header-container {
+  section {
+    h1 {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      margin-top: 50px;
+      .estilo-contacto {
+        font-family: "Montserrat";
+        font-size: 1.2rem;
+      }
+    }
+  }
   .form-position {
-    margin-top: 160px;
+    margin-top: 100px;
+    margin-bottom: 70px;
     div {
       div {
         form {
@@ -305,23 +323,62 @@ a {
     }
   }
 }
+.boton-enviar{
+  font-size: 1.7rem;
+  border-radius: 6px;
+  height: 50px;
+  width: 160px;
+  background-image: linear-gradient(
+    to right,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+  );
+  background-size: 400%;
+  background-position: left;
+ 
+  &:hover {
+    background-position: right;
+}
+}
+.boton-enviar{
+  font-size: 1.7rem;
+  border-radius: 6px;
+  height: 50px;
+  width: 160px;
+  background-image: linear-gradient(
+    to right,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+  );
+  background-size: 400%;
+  background-position: left;
+ 
+  &:hover {
+    background-position: right;
+}
+}
 
 /* estilos FOOTER */
 footer {
   margin-top: 10px;
-  background-color:  #fe812dd2 ;
+  background-color: #fe812dd2;
   max-width: 100%;
- }
+}
 
-  h5{
+h5 {
   font-family: "Montserrat" !important;
-  }
-  
+}
 
-
-i{
+i {
   font-size: 25px;
- }
+}
 
-/* import queries */
 @import "./partials/queries";
