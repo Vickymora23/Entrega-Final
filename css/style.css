@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* import fonts */
 @font-face {
   font-family: "Backhome";
   src: url(../font/Backhome.otf);
@@ -148,11 +149,11 @@ a {
 }
 .destinos_container .tarjetas {
   display: grid;
-  grid-template-columns: repeat(2, 49vw);
+  grid-template-columns: repeat(2, 48vw);
   grid-template-rows: repeat(7, 700px);
   max-width: 99%;
   height: 100vh;
-  gap: 4px 4px;
+  gap: 8px 8px;
 }
 .destinos_container .tarjetas .tarjeta_1 {
   max-width: 98%;
@@ -195,7 +196,7 @@ a {
   box-sizing: 1px 1px 5px rgba(0, 0, 0, 0.45);
 }
 
-/* pagina HISTORIA */
+/* estilo pagina HISTORIA */
 .pagina_historia div div div .img_carousel {
   max-width: 99%;
   height: auto;
@@ -225,39 +226,36 @@ a {
   font-weight: 600;
 }
 
-.contenido-historia {
-  font-family: "RenogareSoft";
-  max-width: 98%;
-}
-
 .card-historia {
   height: 550px;
 }
 
 .img-tarjetas2 {
-  max-width: 99%;
+  width: 48vw;
   height: 350px;
   margin-left: 6px;
   align-items: center;
 }
 
-/* pagina EXCURSIONES */
+/* estilos pagina EXCURSIONES */
 .cabecera .img-portada-exc {
-  width: 98vw;
+  width: 100vw;
   height: 400px;
-  margin-left: 8px;
 }
-.cabecera .img-portada-exc:hover {
+.cabecera .img-portada-exc .img-portada-exc:hover {
   opacity: 0.8;
 }
 
-.contenedor1-exc {
-  margin-top: 60px;
+.contenedor1 {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
+.contenedor1 div div .img-excursiones {
+  height: 600px;
+}
 
-.contenedor2-exc {
-  margin-top: 100px;
+.contenedor2 {
+  margin-top: 30px;
 }
 
 .boton-acordion {
@@ -287,7 +285,7 @@ a {
   background-position: right;
 }
 
-/* pagina CONTACTOS */
+/* estilos pagina CONTACTOS */
 .header-container section h1 {
   display: flex;
   align-items: center;
@@ -323,7 +321,20 @@ a {
   background-position: right;
 }
 
-/* FOOTER */
+.boton-enviar {
+  font-size: 1.7rem;
+  border-radius: 6px;
+  height: 50px;
+  width: 160px;
+  background-image: linear-gradient(to right, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+  background-size: 400%;
+  background-position: left;
+}
+.boton-enviar:hover {
+  background-position: right;
+}
+
+/* estilos FOOTER */
 footer {
   margin-top: 10px;
   background-color: rgba(254, 129, 45, 0.8235294118);
