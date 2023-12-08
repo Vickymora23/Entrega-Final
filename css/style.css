@@ -331,11 +331,44 @@ footer {
 }
 
 h5 {
-  font-family: "Montserrat" !important;
+  font-family: "Montserrat";
 }
 
 i {
   font-size: 25px;
+}
+
+/* pagina ERROR 404 */
+body .pagina-error {
+  font-family: "Montserrat";
+  margin: 50px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+body .pagina-error .error-container {
+  text-align: center;
+}
+body .pagina-error .error-container h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  padding: 40px;
+  color: #e74c3c;
+}
+body .pagina-error .error-container h1 p {
+  font-size: 1.2em;
+  color: #333;
+}
+body .pagina-error .error-container h1 p a {
+  text-decoration: none;
+  color: #3498db;
+}
+body .pagina-error .error-container h1 p a a:hover {
+  text-decoration: underline;
 }
 
 /* Media query para diseño responsive en 576px */
