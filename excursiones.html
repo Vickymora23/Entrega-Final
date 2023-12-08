@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="keywords" content= />
+     <meta name="description" content= />
+      <!-- link logo -->
+    <link rel="shortcut icon" href="./img/logo/esquelsiempre.jpg" >
+     <!-- link boxicoins -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
       rel="stylesheet"
@@ -11,9 +17,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- link bs -->
     <link rel="stylesheet" href="./css/bootstrap.css" />
+    <!-- link css styles -->
     <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
     <title>Excursiones</title>
 </head>
 <body>
@@ -96,7 +105,7 @@
 
 <div class="accordion " id="accordion1">
   <!-- Card 1 -->
-  <div class="card mb-3 max-width: 99% ">
+  <div class="card mb-3 max-width: 99%" data-aos="fade-right">
     <img src="./img/viñedonantyfall.jpg" class="card-img-top img-fluid rounded-3" alt="Viñedo Nant y Fall" style=" max-width: 100%; height: 550px;">
     <div class="card-body max-width: 100% ">
       <h5 class="card-title fw-bold">Bodega Viñas de Nant y Fall</h5>
@@ -127,7 +136,7 @@
 
 <div class="accordion" id="accordion2">
   <!-- Card 2 -->
-  <div class="card mb-3">
+  <div class="card mb-3" data-aos="fade-left">
     <img src="./img/nant-y-fall-6.jpg" class="card-img-top img-fluid rounded-3" alt="Cascadas Nant y Fall" style=" max-width: 100%; height: 550px;">
     <!-- Contenido de la Card 2 -->
     <div class="card-body">
@@ -155,7 +164,7 @@
   
 <div class="accordion" id="accordion3">
   <!-- Card 3 -->
-  <div class="card mb-3">
+  <div class="card mb-3" data-aos="fade-right">
     <img src="./img/canopy-pueblo-alto.jpg" class="card-img-top img-fluid rounded-3" alt="Canopy" style=" max-width: 100%; height: 550px;">
     <!-- Contenido de la Card 3 -->
     <div class="card-body">
@@ -187,7 +196,7 @@
   
 <div class="accordion" id="accordion4">
   <!-- Card 4 -->
-  <div class="card mb-3">
+  <div class="card mb-3" data-aos="fade-left">
     <img src="./img/trochita2.jpg" class="card-img-top img-fluid rounded-3" alt="La Trochita" style=" max-width: 100%; height: 550px;">
     <!-- Contenido de la Card 4 -->
     <div class="card-body">
@@ -218,7 +227,7 @@
 
   <div class="accordion" id="accordion5">
     <!-- Card 5 -->
-    <div class="card mb-3">
+    <div class="card mb-3" data-aos="fade-right">
       <img src="./img/molino-nant-fach-3.jpg" class="card-img-top img-fluid rounded-3" alt="Molino Nant Fach" style=" max-width: 100%; height: 550px;">
       <!-- Contenido de la Card 5 -->
       <div class="card-body">
@@ -247,7 +256,7 @@
   
     <div class="accordion" id="accordion6">
       <!-- Card 6 -->
-      <div class="card mb-3">
+      <div class="card mb-3" data-aos="fade-left">
         <img src="./img/alerzal-milenario.jpg" class="card-img-top img-fluid rounded-3" alt="Alerzal Milenario" style=" max-width: 100%; height: 550px;">
         <!-- Contenido de la Card 6 -->
         <div class="card-body">
@@ -277,7 +286,7 @@
 
       <div class="accordion" id="accordion7">
         <!-- Card 7 -->
-        <div class="card mb-3">
+        <div class="card mb-3" data-aos="fade-right">
           <img src="./img/piedraparadaylabuitrera.jpg" class="card-img-top img-fluid rounded-3" alt="Piedra Parada" style=" max-width: 100%; height: 550px;">
           <!-- Contenido de la Card 7 -->
           <div class="card-body">
@@ -311,7 +320,7 @@
 
         <div class="accordion" id="accordion8">
           <!-- Card 8 -->
-          <div class="card mb-3">
+          <div class="card mb-3" data-aos="fade-left">
             <img src="./img/tunel-de-hielo.jpg" class="card-img-top img-fluid rounded-3" alt="Túneles de Hielo" style=" max-width: 100%; height: 550px;">
             <!-- Contenido de la Card 8 -->
             <div class="card-body">
@@ -436,5 +445,9 @@
       </div>
       <!-- script js -->
         <script src="./js/bootstrap.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 </html>
